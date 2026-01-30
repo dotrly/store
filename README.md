@@ -31,5 +31,19 @@ All apps submitted via the `publish/` folder undergo:
 2. **Permission Check**: Verifying that declared permissions match the code's auto-detected requirements.
 3. **Sandbox Enforcement**: Apps are encrypted and run in the Relay secure runtime.
 
+## Contributing
+We welcome contributions!
+- **Bug Fixes**: Open an issue or a PR for store-related scripts or documentation.
+- **App Submissions**: Please follow the [Contribution Flow](#1-contribution-flow) above.
+- **Reporting Issues**: If an app in the store is malfunctioning or malicious, please report it immediately via a GitHub Issue.
+
+## License
+
+### Store Repository
+The infrastructure and scripts in this repository are licensed under the **MIT License**.
+
+### App Licensing
+Individual applications hosted in this store are subject to the **licenses specified by their respective creators** in their `manifest.json`. Relay does not claim ownership of any third-party applications. By submitting an app, you agree to grant Relay the rights to distribute the binary and host the associated assets.
+
 ---
 *Built for the next generation of professional tools.*
