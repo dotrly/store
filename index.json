@@ -12,7 +12,7 @@
       "downloadUrl": "https://raw.githubusercontent.com/dotrly/store/main/apps/Productivity/com.relay.ollama/latest.rly",
       "bundleId": "com.relay.ollama",
       "id": "com.relay.ollama",
-      "version": "1.0.0",
+      "version": "1.0.1",
       "author": "Relay Team",
       "iconUrl": "https://raw.githubusercontent.com/dotrly/store/main/assets/com.relay.ollama/icon.png"
     },
