@@ -10,7 +10,11 @@
       ],
       "sizeBytes": 1952054,
       "downloadUrl": "https://raw.githubusercontent.com/dotrly/store/main/apps/Productivity/com.relay.ollama/latest.rly",
-      "bundleId": "com.relay.ollama"
+      "bundleId": "com.relay.ollama",
+      "id": "com.relay.ollama",
+      "version": "1.0.0",
+      "author": "Relay Team",
+      "iconUrl": "https://raw.githubusercontent.com/dotrly/store/main/assets/com.relay.ollama/icon.png"
     },
     {
       "name": "Terminal",
@@ -21,7 +25,11 @@
       ],
       "sizeBytes": 2079052,
       "downloadUrl": "https://raw.githubusercontent.com/dotrly/store/main/apps/Developer/com.relay.terminal/latest.rly",
-      "bundleId": "com.relay.terminal"
+      "bundleId": "com.relay.terminal",
+      "id": "com.relay.terminal",
+      "version": "1.0.0",
+      "author": "Relay Team",
+      "iconUrl": "https://raw.githubusercontent.com/dotrly/store/main/assets/com.relay.terminal/icon.png"
     }
   ]
 }
