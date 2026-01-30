@@ -18,19 +18,25 @@
     },
     {
       "name": "Terminal",
-      "description": "A full-featured zsh terminal for Relay.",
-      "category": "Developer",
+      "description": "Terminal provides full terminal access to your local machine with interactive PTY sessions.",
+      "category": "Utilities",
       "screenshots": [
         "1.png"
       ],
       "sizeBytes": 2079052,
-      "downloadUrl": "https://raw.githubusercontent.com/dotrly/store/main/apps/Developer/com.relay.terminal/latest.rly",
+      "downloadUrl": "https://raw.githubusercontent.com/dotrly/store/main/apps/Utilities/com.relay.terminal/latest.rly",
       "bundleId": "com.relay.terminal",
       "id": "com.relay.terminal",
       "version": "1.0.1",
-      "whatsNew": "• Added support for interactive changelogs\n• Improved terminal rendering performance\n• Fixed issue with permissions auto-detection",
-      "author": "Relay Team",
-      "iconUrl": "https://raw.githubusercontent.com/dotrly/store/main/assets/com.relay.terminal/icon.png"
+      "whatsNew": "",
+      "author": "jas",
+      "iconUrl": "https://raw.githubusercontent.com/dotrly/store/main/assets/com.relay.terminal/icon.png",
+      "permissions": [
+        "direct",
+        "terminal",
+        "filesystem"
+      ],
+      "minRelayVersion": "1.0.0"
     }
   ]
 }
