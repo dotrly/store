@@ -27,7 +27,8 @@
       "downloadUrl": "https://raw.githubusercontent.com/dotrly/store/main/apps/Developer/com.relay.terminal/latest.rly",
       "bundleId": "com.relay.terminal",
       "id": "com.relay.terminal",
-      "version": "1.0.0",
+      "version": "1.0.1",
+      "whatsNew": "• Added support for interactive changelogs\n• Improved terminal rendering performance\n• Fixed issue with permissions auto-detection",
       "author": "Relay Team",
       "iconUrl": "https://raw.githubusercontent.com/dotrly/store/main/assets/com.relay.terminal/icon.png"
     }
