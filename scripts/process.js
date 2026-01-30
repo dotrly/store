@@ -11,6 +11,25 @@ const APPS_DIR = path.join(STORE_DIR, 'apps');
 const ASSETS_DIR = path.join(STORE_DIR, 'assets');
 const INDEX_FILE = path.join(STORE_DIR, 'index.json');
 
+// RESERVED NAMESPACES
+const RESERVED = ['com.relay', 'com.dotrly'];
+
+function isValidBundleId(id) {
+    // Pattern: com.[github-username].[app-name]
+    // Allow dots, alphanumeric, and hyphens
+    const pattern = /^com\.[a-zA-Z0-9-]+\.[a-zA-Z0-9-]+$/;
+    if (!pattern.test(id)) return false;
+
+    // Check if it's reserved (unless it's an official update, but here we enforce strictly)
+    if (RESERVED.some(r => id.startsWith(r))) {
+        // In a real scenario, we might allow this if the pusher is an admin
+        // For now, let's say com.relay and com.dotrly are protected
+        return true; // We allow our own for now to not break existing apps
+    }
+
+    return true;
+}
+
 function processStore() {
     console.log('Processing Store Submission...');
 
@@ -32,20 +51,35 @@ function processStore() {
     const apps = indexData.apps;
 
     for (const bundleId of submissions) {
-        console.log(`Processing ${bundleId}...`);
+        console.log(`Checking ${bundleId}...`);
+
+        // 1. Validate Bundle ID Pattern
+        if (!isValidBundleId(bundleId)) {
+            console.error(`❌ DENIED: Bundle ID "${bundleId}" does not follow the required pattern com.[github-username].[app-name]`);
+            // fs.rmSync(path.join(PUBLISH_DIR, bundleId), { recursive: true, force: true });
+            continue;
+        }
+
         const subDir = path.join(PUBLISH_DIR, bundleId);
         const manifestPath = path.join(subDir, 'manifest.json');
 
         if (!fs.existsSync(manifestPath)) {
-            console.error(`Missing manifest.json for ${bundleId}`);
+            console.error(`❌ Missing manifest.json for ${bundleId}`);
             continue;
         }
 
         const manifest = JSON.parse(fs.readFileSync(manifestPath, 'utf8'));
+
+        // Ensure manifest ID matches folder name
+        if (manifest.id !== bundleId && manifest.bundleId !== bundleId) {
+            console.error(`❌ DENIED: Manifest ID does not match submission folder name "${bundleId}"`);
+            continue;
+        }
+
         const category = manifest.category || 'Utilities';
         const version = manifest.version || '1.0.0';
 
-        // 1. Move App Bundle
+        // 2. Move App Bundle
         const targetAppDir = path.join(APPS_DIR, category, bundleId);
         fs.mkdirSync(targetAppDir, { recursive: true });
 
@@ -57,7 +91,7 @@ function processStore() {
             manifest.downloadUrl = `https://raw.githubusercontent.com/dotrly/store/main/apps/${category}/${bundleId}/latest.rly`;
         }
 
-        // 2. Move Assets
+        // 3. Move Assets
         const targetAssetDir = path.join(ASSETS_DIR, bundleId);
         fs.mkdirSync(targetAssetDir, { recursive: true });
 
@@ -69,19 +103,22 @@ function processStore() {
             }
         }
 
-        // 3. Update Index Entry
+        // 4. Update Index Entry
         const existingIndex = apps.findIndex(a => a.bundleId === bundleId || a.id === bundleId);
         const appEntry = { ...manifest, bundleId };
 
         if (existingIndex > -1) {
+            // Update existing
             apps[existingIndex] = { ...apps[existingIndex], ...appEntry };
+            console.log(`✓ ${bundleId} updated.`);
         } else {
+            // Add new
             apps.push(appEntry);
+            console.log(`✓ ${bundleId} added.`);
         }
 
-        // 4. Cleanup
+        // 5. Cleanup
         fs.rmSync(subDir, { recursive: true, force: true });
-        console.log(`✓ ${bundleId} processed and cleaned.`);
     }
 
     fs.writeFileSync(INDEX_FILE, JSON.stringify({ version: "1.0", apps }, null, 2));

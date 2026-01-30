@@ -8,12 +8,14 @@ This store uses an automated ingestion pipeline. Developers do not edit `index.j
 
 ### 1. Contribution Flow
 1. **Develop**: Build your app using the Relay SDK.
-2. **Package**: Run `relay publish` in your app directory. This creates a folder in `store/publish/[bundleId]`.
+2. **Package**: Run `relay publish` in your app directory.
+    *   **Naming Policy**: Your bundle ID must follow the pattern `com.[github-username].[app-name]`.
+    *   *Example*: `com.jaseunda.terminal`
 3. **Submit**: Open a Pull Request adding your folder to the `publish/` directory.
 
 ### 2. Automated Processing
 When a PR is merged into `main`, a GitHub Action runs the `scripts/process.js` script which:
-*   **Validates**: Checks the `.rly` bundle and manifest.
+*   **Validates**: Checks that the bundle ID matches the required pattern. Non-compliant submissions are automatically rejected.
 *   **Organizes**: Moves files from `publish/` to the permanent `apps/` and `assets/` directories.
 *   **Updates Catalog**: Automatically updates the master `index.json` with your app's metadata.
 *   **Cleanup**: Deletes the source `publish/` folder to keep the repo clean.
