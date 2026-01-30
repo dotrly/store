@@ -16,15 +16,16 @@ const RESERVED = ['com.relay', 'com.dotrly'];
 
 function isValidBundleId(id) {
     // Pattern: com.[github-username].[app-name]
-    // Allow dots, alphanumeric, and hyphens
     const pattern = /^com\.[a-zA-Z0-9-]+\.[a-zA-Z0-9-]+$/;
     if (!pattern.test(id)) return false;
 
-    // Check if it's reserved (unless it's an official update, but here we enforce strictly)
-    if (RESERVED.some(r => id.startsWith(r))) {
-        // In a real scenario, we might allow this if the pusher is an admin
-        // For now, let's say com.relay and com.dotrly are protected
-        return true; // We allow our own for now to not break existing apps
+    // Ownership Verification:
+    // In CI, we check if the person submitting the PR matches the bundleId owner.
+    const actor = process.env.GITHUB_ACTOR;
+    const owner = id.split('.')[1];
+
+    if (actor && owner && actor !== owner && !['dotrly', 'relay-bot'].includes(actor)) {
+        console.warn(`⚠️ Warning: Actor "${actor}" does not match owner "${owner}" for bundle ID "${id}"`);
     }
 
     return true;
