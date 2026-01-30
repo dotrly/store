@@ -1,0 +1,32 @@
+name: Process Store Submissions
+
+on:
+  push:
+    branches: [ main ]
+    paths:
+      - 'publish/**'
+
+jobs:
+  process:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Run Processing Script
+        run: node scripts/process.js
+
+      - name: Commit and Push Changes
+        run: |
+          git config --global user.name "Relay Bot"
+          git config --global user.email "bot@dotrly.com"
+          git add apps/ assets/ index.json
+          git status
+          git commit -m "chore: process submissions [skip ci]" || echo "No changes to commit"
+          git push origin main

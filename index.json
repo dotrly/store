@@ -1,0 +1,27 @@
+{
+  "version": "1.0",
+  "apps": [
+    {
+      "name": "Ollama",
+      "description": "Run local LLMs directly in Relay.",
+      "category": "Productivity",
+      "screenshots": [
+        "1.png"
+      ],
+      "sizeBytes": 1952054,
+      "downloadUrl": "https://raw.githubusercontent.com/dotrly/store/main/apps/Productivity/com.relay.ollama/latest.rly",
+      "bundleId": "com.relay.ollama"
+    },
+    {
+      "name": "Terminal",
+      "description": "A full-featured zsh terminal for Relay.",
+      "category": "Developer",
+      "screenshots": [
+        "1.png"
+      ],
+      "sizeBytes": 2079052,
+      "downloadUrl": "https://raw.githubusercontent.com/dotrly/store/main/apps/Developer/com.relay.terminal/latest.rly",
+      "bundleId": "com.relay.terminal"
+    }
+  ]
+}
