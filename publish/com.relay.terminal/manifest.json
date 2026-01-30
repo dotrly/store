@@ -1,0 +1,8 @@
+{
+    "name": "Terminal",
+    "description": "A full-featured zsh terminal for Relay.",
+    "category": "Developer",
+    "screenshots": [
+        "1.png"
+    ]
+}

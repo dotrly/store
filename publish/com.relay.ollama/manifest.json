@@ -1,0 +1,8 @@
+{
+    "name": "Ollama",
+    "description": "Run local LLMs directly in Relay.",
+    "category": "Productivity",
+    "screenshots": [
+        "1.png"
+    ]
+}
