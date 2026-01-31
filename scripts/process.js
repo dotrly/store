@@ -89,7 +89,7 @@ function processStore() {
             fs.copyFileSync(bundlePath, path.join(targetAppDir, `${version}.rly`));
             fs.copyFileSync(bundlePath, path.join(targetAppDir, `latest.rly`));
             manifest.sizeBytes = fs.statSync(bundlePath).size;
-            manifest.downloadUrl = `https://raw.githubusercontent.com/dotrly/store/main/apps/${category}/${bundleId}/latest.rly`;
+            manifest.downloadUrl = `https://cdn.jsdelivr.net/gh/dotrly/store@main/apps/${category}/${bundleId}/latest.rly`;
         }
 
         // 3. Move Assets
@@ -100,7 +100,7 @@ function processStore() {
         for (const file of files) {
             if (file.startsWith('icon.')) {
                 fs.copyFileSync(path.join(subDir, file), path.join(targetAssetDir, file));
-                manifest.iconUrl = `https://raw.githubusercontent.com/dotrly/store/main/assets/${bundleId}/${file}`;
+                manifest.iconUrl = `https://cdn.jsdelivr.net/gh/dotrly/store@main/assets/${bundleId}/${file}`;
             }
         }
 

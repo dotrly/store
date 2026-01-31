@@ -9,12 +9,12 @@
         "1.png"
       ],
       "sizeBytes": 1952054,
-      "downloadUrl": "placeholder",
+      "downloadUrl": "https://cdn.jsdelivr.net/gh/dotrly/store@main/apps/Utilities/com.relay.ollama/latest.rly",
       "bundleId": "com.relay.ollama",
       "id": "com.relay.ollama",
       "version": "1.0.1",
       "author": "dotrly",
-      "iconUrl": "placeholder"
+      "iconUrl": "https://cdn.jsdelivr.net/gh/dotrly/store@main/assets/com.relay.ollama/icon.png"
     },
     {
       "name": "Terminal",
@@ -24,13 +24,13 @@
         "1.png"
       ],
       "sizeBytes": 2079052,
-      "downloadUrl": "placeholder",
+      "downloadUrl": "https://cdn.jsdelivr.net/gh/dotrly/store@main/apps/Utilities/com.relay.terminal/latest.rly",
       "bundleId": "com.relay.terminal",
       "id": "com.relay.terminal",
-      "version": "1.0.2",
+      "version": "1.1.0",
       "whatsNew": "",
       "author": "jas",
-      "iconUrl": "placeholder",
+      "iconUrl": "https://cdn.jsdelivr.net/gh/dotrly/store@main/assets/com.relay.terminal/icon.png",
       "permissions": [
         "direct",
         "terminal",
