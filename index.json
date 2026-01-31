@@ -3,18 +3,18 @@
   "apps": [
     {
       "name": "Ollama",
-      "description": "Run local LLMs directly in Relay.",
-      "category": "Productivity",
+      "description": "Ollama native app for relay to run local LLMs directly on your device with Ollama. Chat with AI models privately and securely.",
+      "category": "Utilities",
       "screenshots": [
         "1.png"
       ],
       "sizeBytes": 1952054,
-      "downloadUrl": "https://raw.githubusercontent.com/dotrly/store/main/apps/Productivity/com.relay.ollama/latest.rly",
+      "downloadUrl": "placeholder",
       "bundleId": "com.relay.ollama",
       "id": "com.relay.ollama",
       "version": "1.0.1",
-      "author": "Relay Team",
-      "iconUrl": "https://raw.githubusercontent.com/dotrly/store/main/assets/com.relay.ollama/icon.png"
+      "author": "dotrly",
+      "iconUrl": "placeholder"
     },
     {
       "name": "Terminal",
@@ -24,13 +24,13 @@
         "1.png"
       ],
       "sizeBytes": 2079052,
-      "downloadUrl": "https://raw.githubusercontent.com/dotrly/store/main/apps/Utilities/com.relay.terminal/latest.rly",
+      "downloadUrl": "placeholder",
       "bundleId": "com.relay.terminal",
       "id": "com.relay.terminal",
-      "version": "1.0.1",
+      "version": "1.0.2",
       "whatsNew": "",
       "author": "jas",
-      "iconUrl": "https://raw.githubusercontent.com/dotrly/store/main/assets/com.relay.terminal/icon.png",
+      "iconUrl": "placeholder",
       "permissions": [
         "direct",
         "terminal",
