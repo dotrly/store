@@ -118,10 +118,11 @@ function processStore() {
         const appEntry = { ...manifest, bundleId };
 
         if (existingIndex > -1) {
-            // Update existing
-            apps[existingIndex] = { ...apps[existingIndex], ...appEntry };
+            // REPLACE entirely with the new verified manifest to ensure accuracy
+            apps[existingIndex] = appEntry;
             console.log(`✓ ${bundleId} updated.`);
-        } else {
+        }
+        else {
             // Add new
             apps.push(appEntry);
             console.log(`✓ ${bundleId} added.`);
