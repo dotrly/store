@@ -3,8 +3,8 @@
   "bundleId": "com.relay.rcode",
   "category": "Utilities",
   "description": "# Rcode: Professional Mobile Code Editor\n\nUnleash your productivity with **Rcode**, a sophisticated, professional-grade code editor meticulously crafted for the mobile era. Experience the seamless fusion of desktop-class power and intuitive design.\n\n## Key Features\n\n- **Advanced Syntax Highlighting**: Support for over 100 languages with intelligent color schemes.\n- **Intelligent Code Completion**: Context-aware suggestions to help you write code faster.\n- **Integrated Terminal**: Run shell commands and interact with the Relay environment directly.\n- **Efficient File Management**: Navigate complex projects with a powerful search and file explorer.\n- **PWA Ready**: Install as a standalone app and work offline anywhere.\n\n## Powerful Editing\nRcode brings the full power of modern development to your fingertips. Whether you're making a quick fix or building a full project, Rcode provides the tools you need.\n\n---\n*The ultimate tool for the modern developer.*\n",
-  "downloadUrl": "https://github.com/dotrly/store/releases/download/com.relay.rcode/app-1769970433628.rly",
-  "iconUrl": "https://github.com/dotrly/store/releases/download/com.relay.rcode/icon-1769970433628.png",
+  "downloadUrl": "https://github.com/dotrly/store/releases/download/com.relay.rcode/app-1769973234650.rly",
+  "iconUrl": "https://github.com/dotrly/store/releases/download/com.relay.rcode/icon-1769973234650.png",
   "id": "com.relay.rcode",
   "name": "Rcode",
   "permissions": [
@@ -18,13 +18,13 @@
     "web"
   ],
   "screenshots": [
-    "https://github.com/dotrly/store/releases/download/com.relay.rcode/Simulator%20Screenshot%20-%20iPad%20Pro%2013-inch%20(M5)%20(16GB)%20-%202026-02-01%20at%2014.01.54.png",
-    "https://github.com/dotrly/store/releases/download/com.relay.rcode/Simulator%20Screenshot%20-%20iPad%20Pro%2013-inch%20(M5)%20(16GB)%20-%202026-02-01%20at%2014.02.17.png",
-    "https://github.com/dotrly/store/releases/download/com.relay.rcode/Simulator%20Screenshot%20-%20iPad%20Pro%2013-inch%20(M5)%20(16GB)%20-%202026-02-01%20at%2014.02.36.png",
-    "https://github.com/dotrly/store/releases/download/com.relay.rcode/Simulator%20Screenshot%20-%20iPhone%2017%20Pro%20-%202026-02-01%20at%2013.52.52.png",
-    "https://github.com/dotrly/store/releases/download/com.relay.rcode/Simulator%20Screenshot%20-%20iPhone%2017%20Pro%20-%202026-02-01%20at%2013.53.03.png",
-    "https://github.com/dotrly/store/releases/download/com.relay.rcode/Simulator%20Screenshot%20-%20iPhone%2017%20Pro%20-%202026-02-01%20at%2013.53.16.png",
-    "https://github.com/dotrly/store/releases/download/com.relay.rcode/Simulator%20Screenshot%20-%20iPhone%2017%20Pro%20-%202026-02-01%20at%2013.53.50.png"
+    "https://github.com/dotrly/store/releases/download/com.relay.rcode/screenshot-0-1769973234650.png",
+    "https://github.com/dotrly/store/releases/download/com.relay.rcode/screenshot-1-1769973234650.png",
+    "https://github.com/dotrly/store/releases/download/com.relay.rcode/screenshot-2-1769973234650.png",
+    "https://github.com/dotrly/store/releases/download/com.relay.rcode/screenshot-3-1769973234650.png",
+    "https://github.com/dotrly/store/releases/download/com.relay.rcode/screenshot-4-1769973234650.png",
+    "https://github.com/dotrly/store/releases/download/com.relay.rcode/screenshot-5-1769973234650.png",
+    "https://github.com/dotrly/store/releases/download/com.relay.rcode/screenshot-6-1769973234650.png"
   ],
   "sizeBytes": 7242480,
   "tags": [
