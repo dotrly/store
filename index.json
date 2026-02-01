@@ -6,8 +6,8 @@
       "bundleId": "com.relay.rcode",
       "category": "Utilities",
       "description": "# Rcode: Professional Mobile Code Editor\n\nUnleash your productivity with **Rcode**, a sophisticated, professional-grade code editor meticulously crafted for the mobile era. Experience the seamless fusion of desktop-class power and intuitive design.\n\n## Key Features\n\n- **Advanced Syntax Highlighting**: Support for over 100 languages with intelligent color schemes.\n- **Intelligent Code Completion**: Context-aware suggestions to help you write code faster.\n- **Integrated Terminal**: Run shell commands and interact with the Relay environment directly.\n- **Efficient File Management**: Navigate complex projects with a powerful search and file explorer.\n- **PWA Ready**: Install as a standalone app and work offline anywhere.\n\n## Powerful Editing\nRcode brings the full power of modern development to your fingertips. Whether you're making a quick fix or building a full project, Rcode provides the tools you need.\n\n---\n*The ultimate tool for the modern developer.*\n",
-      "downloadUrl": "https://github.com/dotrly/store/releases/download/com.relay.rcode/app-1769969186401.rly",
-      "iconUrl": "https://github.com/dotrly/store/releases/download/com.relay.rcode/icon-1769969186401.png",
+      "downloadUrl": "https://github.com/dotrly/store/releases/download/com.relay.rcode/app-1769970433628.rly",
+      "iconUrl": "https://github.com/dotrly/store/releases/download/com.relay.rcode/icon-1769970433628.png",
       "id": "com.relay.rcode",
       "name": "Rcode",
       "permissions": [
