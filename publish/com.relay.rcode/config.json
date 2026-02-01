@@ -1,0 +1,19 @@
+{
+    "bundleId": "com.relay.rcode",
+    "category": "Developer Tools",
+    "tags": [
+        "Editor",
+        "Code",
+        "Development"
+    ],
+    "platforms": [
+        "ios",
+        "android",
+        "web"
+    ],
+    "permissions": [
+        "filesystem",
+        "terminal",
+        "network"
+    ]
+}
