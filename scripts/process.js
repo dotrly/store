@@ -128,7 +128,7 @@ function processStore() {
         }
 
         // 5. Cleanup
-        // fs.rmSync(subDir, { recursive: true, force: true });
+        fs.rmSync(subDir, { recursive: true, force: true });
     }
 
     fs.writeFileSync(INDEX_FILE, JSON.stringify({ version: "1.0", apps }, null, 2));
