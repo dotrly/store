@@ -23,13 +23,13 @@ async function publishDraftReleases() {
 
         try {
             // Check release status
-            const result = execSync(`gh release view "${tag}" --json isDraft`, { stdio: 'pipe' }).toString();
-            const { isDraft } = JSON.parse(result);
+            const result = execSync(`gh release view "${tag}" --json isDraft,isPrerelease`, { stdio: 'pipe' }).toString();
+            const { isDraft, isPrerelease } = JSON.parse(result);
 
-            if (isDraft) {
-                console.log(`🚀 Publishing Draft Release: ${tag}`);
-                execSync(`gh release edit "${tag}" --draft=false`, { stdio: 'inherit' });
-                console.log(`✓ Published ${tag}`);
+            if (isDraft || isPrerelease) {
+                console.log(`🚀 Promoting Release: ${tag} (Draft: ${isDraft}, Pre-release: ${isPrerelease})`);
+                execSync(`gh release edit "${tag}" --draft=false --prerelease=false`, { stdio: 'inherit' });
+                console.log(`✓ Published ${tag} as stable.`);
             }
         } catch (e) {
             // Release might not exist or error, simple ignore or debug log
