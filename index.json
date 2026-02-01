@@ -76,6 +76,29 @@
       "sizeBytes": 7242480,
       "downloadUrl": "https://github.com/dotrly/store/releases/download/com.relay.rcode-v1.0.5/app-1769954107058.rly",
       "bundleId": "com.relay.rcode"
+    },
+    {
+      "name": "Volley",
+      "description": "# Volley - Focus & Flow\n\nVolley is a minimalist, physics-based volleyball game designed to induce a state of flow. \n\n## Features\n- **Dynamic Physics**: Responsive ball movement that rewards precision.\n- **Haptic Feedback**: Feel every hit (on supported devices).\n- **Adaptive Audio**: Spatial sound effects that react to your gameplay.\n- **Clean Aesthetic**: A distraction-free, premium visual experience.\n- **Progressive Difficulty**: The game naturally speeds up as you improve.\n\n## How to Play\nDrag your paddle horizontally to keep the ball in the air. Hit the ball at different angles to control its direction and speed. Don't let it hit the ground!\n",
+      "category": "Games",
+      "screenshots": [
+        "https://github.com/dotrly/store/releases/download/com.relay.volley-v1.0.0/Simulator%20Screenshot%20-%20iPhone%2017%20Pro%20-%202026-02-01%20at%2022.31.39.png",
+        "https://github.com/dotrly/store/releases/download/com.relay.volley-v1.0.0/Simulator%20Screenshot%20-%20iPhone%2017%20Pro%20-%202026-02-01%20at%2022.31.53.png",
+        "https://github.com/dotrly/store/releases/download/com.relay.volley-v1.0.0/Simulator%20Screenshot%20-%20iPhone%2017%20Pro%20-%202026-02-01%20at%2022.31.59.png"
+      ],
+      "sizeBytes": 192162,
+      "downloadUrl": "https://github.com/dotrly/store/releases/download/com.relay.volley-v1.0.0/app-1769956344504.rly",
+      "bundleId": "com.relay.volley",
+      "id": "com.relay.volley",
+      "version": "1.0.0",
+      "whatsNew": "# Changelog\n\n## 1.0.0\n- Initial release of Volley.\n- Core gameplay loop with progressive difficulty.\n- Light and Dark modes.\n- High score tracking.\n",
+      "author": "Anonymous",
+      "permissions": [
+        "audio"
+      ],
+      "platforms": [],
+      "tags": [],
+      "iconUrl": "https://github.com/dotrly/store/releases/download/com.relay.volley-v1.0.0/icon-1769956344504.png"
     }
   ]
 }
