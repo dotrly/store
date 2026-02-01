@@ -1,18 +1,17 @@
-# Ignore all files
+# Ignore everything
 *
 
-# Allow README and LICENSE
+# Whitelist Core Files
 !README.md
 !LICENSE
 !CHANGELOG.md
-
-# Allow store files
-!scripts/bot-publish.js
+!.gitignore
 !index.json
 
-# Allow workspace files
-!workspace.json
-!.github/workflows/process.yml
+# Whitelist GitHub Config & Scripts
+!.github/*
 
-# Allow self
-!.gitignore
+# Whitelist ONLY JSON files in apps/
+!apps/
+apps/*
+!apps/*.json

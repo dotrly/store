@@ -21,7 +21,19 @@ jobs:
         with:
           node-version: '20'
 
+      - name: Sanitize Registry
+        run: find apps -type f ! -name '*.json' -delete || true
+
+      - name: Build Catalog
+        run: node .github/scripts/build-catalog.cjs
+
       - name: Promote Releases
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: node scripts/bot-publish.js
+        run: node .github/scripts/bot-publish.cjs
+
+      - name: Commit Catalog
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "chore: Rebuild catalog [skip ci]"
+          file_pattern: "index.json"
