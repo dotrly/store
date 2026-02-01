@@ -1,6 +1,18 @@
-node_modules
-publish/
-submissions/
-*.log
-pr-body.md
-.DS_Store
+# Ignore all files
+*
+
+# Allow README and LICENSE
+!README.md
+!LICENSE
+!CHANGELOG.md
+
+# Allow store files
+!scripts/bot-publish.js
+!index.json
+
+# Allow workspace files
+!workspace.json
+!.github/workflows/process.yml
+
+# Allow self
+!.gitignore
