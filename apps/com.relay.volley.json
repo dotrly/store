@@ -3,8 +3,8 @@
   "bundleId": "com.relay.volley",
   "category": "Games",
   "description": "# Volley - Focus & Flow\n\nVolley is a minimalist, physics-based volleyball game designed to induce a state of flow. \n\n## Features\n- **Dynamic Physics**: Responsive ball movement that rewards precision.\n- **Haptic Feedback**: Feel every hit (on supported devices).\n- **Adaptive Audio**: Spatial sound effects that react to your gameplay.\n- **Clean Aesthetic**: A distraction-free, premium visual experience.\n- **Progressive Difficulty**: The game naturally speeds up as you improve.\n\n## How to Play\nDrag your paddle horizontally to keep the ball in the air. Hit the ball at different angles to control its direction and speed. Don't let it hit the ground!\n",
-  "downloadUrl": "https://github.com/dotrly/store/releases/download/com.relay.volley/app-1769968979165.rly",
-  "iconUrl": "https://github.com/dotrly/store/releases/download/com.relay.volley/icon-1769968979165.png",
+  "downloadUrl": "https://github.com/dotrly/store/releases/download/com.relay.volley/app-1769970421377.rly",
+  "iconUrl": "https://github.com/dotrly/store/releases/download/com.relay.volley/icon-1769970421377.png",
   "id": "com.relay.volley",
   "name": "Volley",
   "permissions": [
