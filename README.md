@@ -1,24 +1,28 @@
 # Relay Store
 
+> **API-Only Repository**: This repository is designed for automated ingestion via the Relay CLI. Manual edits to the catalog or app folders are strictly prohibited and will be automatically rejected. Please use `relay publish` for all submissions.
+
 The official app repository for the Relay ecosystem. This repository manages app binaries, assets, and the master `index.json` catalog.
 
-## How it Works (Automated GitOps)
+## How it Works (Seamless Publishing)
 
-This store uses an automated ingestion pipeline. Developers do not edit `index.json` directly. Instead, they submit apps to the `publish/` folder, and our automation handles the rest.
+The Relay Store uses a modern, "Git-less" submission flow. Developers do not need to clone this repository or edit files manually. Our automated **Relay Bot** handles all cataloging and PR management.
 
 ### 1. Contribution Flow
-1. **Develop**: Build your app using the Relay SDK.
-2. **Package**: Run `relay publish` in your app directory.
-    *   **Naming Policy**: Your bundle ID must follow the pattern `com.[github-username].[app-name]`.
-    *   *Example*: `com.jaseunda.terminal`
-3. **Submit**: Open a Pull Request adding your folder to the `publish/` directory.
+1.  **Prepare Assets**: Manage your app's presence in a local `store/` folder (description, icon, screenshots).
+2.  **Verify Permissions**: Run `relay build`. Our system auto-detects used APIs to ensure metadata accuracy.
+3.  **Authentication**: Ensure you are logged into the GitHub CLI (`gh auth login`). 
+    > [!IMPORTANT]
+    > **Identity Matching**: Your GitHub username MUST match the namespace in your bundle ID (e.g., `@jaseunda` for `com.jaseunda.app`).
+4.  **Publish**: Run `relay publish` in your project root.
+    *   **Automated Submission**: The CLI bundles your app and assets into a submission package.
+    *   **Bot-Generated PR**: Our Bridge Service verifies your identity and uses the **Relay Bot** to open a Pull Request on this repo.
 
-### 2. Automated Processing
-When a PR is merged into `main`, a GitHub Action runs the `scripts/process.js` script which:
-*   **Validates**: Checks that the bundle ID matches the required pattern. Non-compliant submissions are automatically rejected.
-*   **Organizes**: Moves files from `publish/` to the permanent `apps/` and `assets/` directories.
-*   **Updates Catalog**: Automatically updates the master `index.json` with your app's metadata.
-*   **Cleanup**: Deletes the source `publish/` folder to keep the repo clean.
+### 2. Automated Ingestion & Review
+Once a submission PR is opened:
+*   **Verification**: The bot performs static analysis on the bundle and enforces strict permission matches.
+*   **PR Management**: Multi-submissions for the same app automatically close outdated PRs to keep the queue clean.
+*   **Catalog Update**: Upon approval and merge, `scripts/process.js` automatically updates the master `index.json`, moves assets, and deploys the new version globally.
 
 ## Directory Structure
 *   `publish/`: Staging area for new submissions (cleared automatically).
