@@ -102,6 +102,15 @@ function processStore() {
                 fs.copyFileSync(path.join(subDir, file), path.join(targetAssetDir, file));
                 manifest.iconUrl = `https://cdn.jsdelivr.net/gh/dotrly/store@main/assets/${bundleId}/${file}`;
             }
+
+            if (file === 'screenshots' && fs.statSync(path.join(subDir, file)).isDirectory()) {
+                const targetScreenshotsDir = path.join(targetAssetDir, 'screenshots');
+                fs.mkdirSync(targetScreenshotsDir, { recursive: true });
+                const screenshotFiles = fs.readdirSync(path.join(subDir, file));
+                for (const screenshot of screenshotFiles) {
+                    fs.copyFileSync(path.join(subDir, file, screenshot), path.join(targetScreenshotsDir, screenshot));
+                }
+            }
         }
 
         // 4. Update Index Entry

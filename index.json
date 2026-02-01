@@ -37,6 +37,52 @@
         "filesystem"
       ],
       "minRelayVersion": "1.0.0"
+    },
+    {
+      "id": "com.relay.rcode",
+      "name": "Rcode",
+      "slug": "rcode",
+      "version": "1.0.0",
+      "description": "Rcode is the ultimate creative sanctuary for code artists. Meticulously designed for the Relay ecosystem, it bridges the gap between desktop precision and mobile freedom.\n\nCrafted for Excellence:\n- Refined Workspace: An elegant, distraction-free environment that responds to your touch with buttery-smooth precision.\n- Command Center: A fully-integrated professional terminal, putting the power of a desktop workstation in the palm of your hand.\n- Deep Synergy: Built-in awareness of your projects, offering seamless navigation and real-time state management.\n- Visual Perfection: A stunning Apple-inspired aesthetic featuring sophisticated glassmorphism and world-class typography.\n- Unbound Creativity: Fully offline architecture ensures your best ideas are captured anywhere, at any time.\n\nElevate your craftsmanship with Rcode—the premier professional workspace for the modern creator.",
+      "category": "Utilities",
+      "author": "dotrly",
+      "iconUrl": "https://cdn.jsdelivr.net/gh/dotrly/store@main/assets/com.relay.rcode/icon.png",
+      "screenshots": [
+        "1.png",
+        "2.png",
+        "3.png",
+        "4.png",
+        "5.png",
+        "6.png",
+        "7.png"
+      ],
+      "permissions": [
+        "filesystem",
+        "terminal",
+        "network",
+        "notifications",
+        "camera",
+        "geolocation"
+      ],
+      "minRelayVersion": "1.0.0",
+      "whatsNew": "Initial professional release of Rcode for Relay. Introducing full CodeMirror 6 support, terminal integration, and premium UI.",
+      "tags": [
+        "IDE",
+        "Editor",
+        "Development",
+        "Coding",
+        "Terminal",
+        "Git"
+      ],
+      "platforms": [
+        "macOS",
+        "iOS",
+        "Android",
+        "Web"
+      ],
+      "sizeBytes": 7203026,
+      "downloadUrl": "https://cdn.jsdelivr.net/gh/dotrly/store@main/apps/Utilities/com.relay.rcode/latest.rly",
+      "bundleId": "com.relay.rcode"
     }
   ]
 }
