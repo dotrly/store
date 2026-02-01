@@ -1,0 +1,29 @@
+{
+  "author": "dotrly",
+  "bundleId": "com.relay.rcode",
+  "category": "Utilities",
+  "description": "# Rcode: Professional Mobile Code Editor\n\nUnleash your productivity with **Rcode**, a sophisticated, professional-grade code editor meticulously crafted for the mobile era. Experience the seamless fusion of desktop-class power and intuitive design.\n\n## Key Features\n\n- **Advanced Syntax Highlighting**: Support for over 100 languages with intelligent color schemes.\n- **Intelligent Code Completion**: Context-aware suggestions to help you write code faster.\n- **Integrated Terminal**: Run shell commands and interact with the Relay environment directly.\n- **Efficient File Management**: Navigate complex projects with a powerful search and file explorer.\n- **PWA Ready**: Install as a standalone app and work offline anywhere.\n\n## Powerful Editing\nRcode brings the full power of modern development to your fingertips. Whether you're making a quick fix or building a full project, Rcode provides the tools you need.\n\n---\n*The ultimate tool for the modern developer.*\n",
+  "downloadUrl": "https://github.com/dotrly/store/releases/download/com.relay.rcode/app-1769968129359.rly",
+  "iconUrl": "https://github.com/dotrly/store/releases/download/com.relay.rcode/icon-1769968129359.png",
+  "id": "com.relay.rcode",
+  "name": "Rcode",
+  "permissions": [
+    "clipboard",
+    "filesystem",
+    "network"
+  ],
+  "platforms": [
+    "ios",
+    "android",
+    "web"
+  ],
+  "screenshots": [],
+  "sizeBytes": 7242480,
+  "tags": [
+    "Editor",
+    "Code",
+    "Development"
+  ],
+  "version": "1.0.6",
+  "whatsNew": "# Changelog\n\n## [1.0.3] - 2026-02-01\n\n### Added\n- Initial release of Rcode for the Relay Store.\n- High-performance syntax highlighting for 100+ languages.\n- Integrated terminal with PTY support.\n- Project-wide search and file management.\n- Seamless \"Git-less\" publishing flow integration.\n\n### Improved\n- Startup time optimized for mobile devices.\n- Theme engine support for System Dark/Light modes.\n"
+}
