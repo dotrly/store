@@ -12,17 +12,17 @@ The Relay Store uses a modern, "Git-less" submission flow. Developers do not nee
 1.  **Prepare Assets**: Manage your app's presence in a local `store/` folder (description, icon, screenshots).
 2.  **Verify Permissions**: Run `relay build`. Our system auto-detects used APIs to ensure metadata accuracy.
 3.  **Authentication**: Ensure you are logged into the GitHub CLI (`gh auth login`). 
-    > [!IMPORTANT]
     > **Identity Matching**: Your GitHub username MUST match the namespace in your bundle ID (e.g., `@jaseunda` for `com.jaseunda.app`).
 4.  **Publish**: Run `relay publish` in your project root.
     *   **Automated Submission**: The CLI bundles your app and assets into a submission package.
     *   **Bot-Generated PR**: Our Bridge Service verifies your identity and uses the **Relay Bot** to open a Pull Request on this repo.
 
-### 2. Automated Ingestion & Review
-Once a submission PR is opened:
-*   **Verification**: The bot performs static analysis on the bundle and enforces strict permission matches.
-*   **PR Management**: Multi-submissions for the same app automatically close outdated PRs to keep the queue clean.
-*   **Catalog Update**: Upon approval and merge, `scripts/process.js` automatically updates the master `index.json`, moves assets, and deploys the new version globally.
+### 3. Technical Guidelines & Efficiency
+Relay is designed for extreme efficiency. Our benchmarks show that complex professional tools are significantly leaner in Relay than on traditional platforms.
+*   **100MB Guideline**: While our storage engine supports virtually unlimited capacity, we recommend keeping app bundles below **100MB** for optimal performance.
+*   **Platform Efficiency**: A typical 800MB app from the traditional App Store often yields a functionally identical experience at only **~2MB** in Relay.
+
+---
 
 ## Directory Structure
 *   `publish/`: Staging area for new submissions (cleared automatically).

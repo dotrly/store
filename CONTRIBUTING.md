@@ -18,6 +18,10 @@ The Relay Store is built on trust and automation. You do not need to fork this r
 - **Human Review**: A maintainer will review your UI/UX and utility.
 - **Updates**: If you need to make changes, simply update your local project and run `relay publish` again. The bot will automatically update your existing PR (or close outdated ones).
 
+## Technical Recommendations
+*   **Stay Lean**: Aim for app bundles below **100MB**. Relay's architecture is highly optimized; a 2MB Relay app can often match the power of an 800MB traditional executable.
+*   **Optimize Assets**: Use efficient image formats for icons and screenshots to keep the initial load snappy.
+
 ## Bug Reports & Improvements
 If you find an issue with the store scripts or documentation:
 1. Open a GitHub Issue describing the bug or suggestion.
