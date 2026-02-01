@@ -43,29 +43,24 @@
       "name": "Rcode",
       "slug": "rcode",
       "version": "1.0.0",
-      "description": "Rcode is a professional-grade, mobile-first code editor and JavaScript runtime meticulously crafted for the Relay ecosystem. It bridges the gap between desktop precision and mobile freedom, offering a powerhouse development environment that fits in your pocket.\n\n### Core Features\n- **Desktop-Class Editor**: Powered by CodeMirror 6, featuring professional syntax highlighting for 50+ languages (JSX, TSX, Python, Rust, and more).\n- **Integrated Pro Terminal**: A fully functional, resizable terminal with multi-session support and ANSI color rendering.\n- **Advanced File Management**: Deep hierarchical tree view, breadcrumb navigation, and specialized file/folder icons.\n- **Git Integration**: Real-time status indicators and badge labels to keep your source control in check.\n- **Premium Aesthetics**: Sophisticated glassmorphism, JetBrains Mono typography, and silky-smooth 60fps animations.\n\n### Why Rcode?\nRcode is built for developers who refuse to compromise. Whether you're on a train or at a desk, your creative flow remains uninterrupted with its **fully offline** architecture and zero runtime dependencies.\n\n*Elevate your craftsmanship with the premier workspace for the modern creator.*",
+      "description": "A new Relay application.",
       "category": "Utilities",
       "author": "dotrly",
       "iconUrl": "https://cdn.jsdelivr.net/gh/dotrly/store@main/assets/com.relay.rcode/icon.png",
       "screenshots": [
-        "1.png",
-        "2.png",
-        "3.png",
-        "4.png",
-        "5.png",
-        "6.png",
-        "7.png"
+        "Simulator Screenshot - iPad Pro 13-inch (M5) (16GB) - 2026-02-01 at 14.01.54.png",
+        "Simulator Screenshot - iPad Pro 13-inch (M5) (16GB) - 2026-02-01 at 14.02.17.png",
+        "Simulator Screenshot - iPad Pro 13-inch (M5) (16GB) - 2026-02-01 at 14.02.36.png",
+        "Simulator Screenshot - iPhone 17 Pro - 2026-02-01 at 13.52.52.png",
+        "Simulator Screenshot - iPhone 17 Pro - 2026-02-01 at 13.53.03.png",
+        "Simulator Screenshot - iPhone 17 Pro - 2026-02-01 at 13.53.16.png",
+        "Simulator Screenshot - iPhone 17 Pro - 2026-02-01 at 13.53.50.png"
       ],
       "permissions": [
-        "filesystem",
-        "terminal",
-        "network",
-        "notifications",
-        "camera",
-        "geolocation"
+        "clipboard"
       ],
       "minRelayVersion": "1.0.0",
-      "whatsNew": "Initial professional release of Rcode for Relay. Introducing full CodeMirror 6 support, terminal integration, and premium UI.",
+      "whatsNew": "# Changelog\n\n## [1.0.0] - 2026-02-01\n\n### Added\n- Initial release of Rcode for the Relay Store.\n- High-performance syntax highlighting for 100+ languages.\n- Integrated terminal with PTY support.\n- Project-wide search and file management.\n- Seamless \"Git-less\" publishing flow integration.\n\n### Improved\n- Startup time optimized for mobile devices.\n- Theme engine support for System Dark/Light modes.\n",
       "tags": [
         "IDE",
         "Editor",
@@ -75,10 +70,9 @@
         "Git"
       ],
       "platforms": [
-        "macOS",
-        "iOS",
-        "Android",
-        "Web"
+        "ios",
+        "android",
+        "web"
       ],
       "sizeBytes": 7203026,
       "downloadUrl": "https://cdn.jsdelivr.net/gh/dotrly/store@main/apps/Utilities/com.relay.rcode/latest.rly",
