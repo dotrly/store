@@ -30,7 +30,7 @@ jobs:
       - name: Promote Releases
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: node .github/scripts/bot-publish.cjs
+        run: node .github/scripts/bot-publish.mjs
 
       - name: Commit Catalog
         uses: stefanzweifel/git-auto-commit-action@v5

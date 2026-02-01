@@ -9,7 +9,8 @@
 !index.json
 
 # Whitelist GitHub Config & Scripts
-!.github/*
+!.github/
+!.github/**
 
 # Whitelist ONLY JSON files in apps/
 !apps/
