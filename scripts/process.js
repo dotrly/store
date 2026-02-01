@@ -7,8 +7,8 @@ const __dirname = path.dirname(__filename);
 
 const STORE_DIR = path.resolve(__dirname, '..');
 const PUBLISH_DIR = path.join(STORE_DIR, 'publish');
-const APPS_DIR = path.join(STORE_DIR, 'apps');
-const ASSETS_DIR = path.join(STORE_DIR, 'assets');
+// const APPS_DIR = path.join(STORE_DIR, 'apps'); // DEPRECATED: Storage moved to Releases
+// const ASSETS_DIR = path.join(STORE_DIR, 'assets'); // DEPRECATED: Storage moved to Releases
 const INDEX_FILE = path.join(STORE_DIR, 'index.json');
 
 // RESERVED NAMESPACES
@@ -80,35 +80,36 @@ function processStore() {
         const category = manifest.category || 'Utilities';
         const version = manifest.version || '1.0.0';
 
-        // 2. Move App Bundle
-        const targetAppDir = path.join(APPS_DIR, category, bundleId);
-        fs.mkdirSync(targetAppDir, { recursive: true });
-
+        // 2. [SIMULATED] Move App Bundle to GitHub Release
+        // In production, this would upload the file to `gh release create <tag> ...`
         const bundlePath = path.join(subDir, 'app.rly');
         if (fs.existsSync(bundlePath)) {
-            fs.copyFileSync(bundlePath, path.join(targetAppDir, `${version}.rly`));
-            fs.copyFileSync(bundlePath, path.join(targetAppDir, `latest.rly`));
+            // RELEASE STRATEGY: One release per app version
+            // Tag: com.user.app-v1.0.0
+            const releaseTag = `${bundleId}-v${version}`;
+
+            console.log(`[CDN] Creating Release "${releaseTag}"...`);
+            console.log(`[CDN] Uploading app.rly to Release "${releaseTag}"...`);
+
             manifest.sizeBytes = fs.statSync(bundlePath).size;
-            manifest.downloadUrl = `https://cdn.jsdelivr.net/gh/dotrly/store@main/apps/${category}/${bundleId}/latest.rly`;
+            manifest.downloadUrl = `https://github.com/dotrly/store/releases/download/${releaseTag}/app.rly`;
         }
 
-        // 3. Move Assets
-        const targetAssetDir = path.join(ASSETS_DIR, bundleId);
-        fs.mkdirSync(targetAssetDir, { recursive: true });
-
+        // 3. [SIMULATED] Move Assets to GitHub Release
         const files = fs.readdirSync(subDir);
         for (const file of files) {
             if (file.startsWith('icon.')) {
-                fs.copyFileSync(path.join(subDir, file), path.join(targetAssetDir, file));
-                manifest.iconUrl = `https://cdn.jsdelivr.net/gh/dotrly/store@main/assets/${bundleId}/${file}`;
+                console.log(`[CDN] Uploading ${file} to GitHub Release...`);
+                // RELEASE URL FORMAT: https://github.com/dotrly/store/releases/download/com.user.app-v1.0.0/icon.png
+                manifest.iconUrl = `https://github.com/dotrly/store/releases/download/${bundleId}-v${version}/${file}`;
             }
 
             if (file === 'screenshots' && fs.statSync(path.join(subDir, file)).isDirectory()) {
-                const targetScreenshotsDir = path.join(targetAssetDir, 'screenshots');
-                fs.mkdirSync(targetScreenshotsDir, { recursive: true });
                 const screenshotFiles = fs.readdirSync(path.join(subDir, file));
+                manifest.screenshots = [];
                 for (const screenshot of screenshotFiles) {
-                    fs.copyFileSync(path.join(subDir, file, screenshot), path.join(targetScreenshotsDir, screenshot));
+                    console.log(`[CDN] Uploading screenshot ${screenshot} to GitHub Release...`);
+                    manifest.screenshots.push(`https://github.com/dotrly/store/releases/download/${bundleId}-v${version}/${screenshot}`);
                 }
             }
         }

@@ -9,28 +9,28 @@
         "1.png"
       ],
       "sizeBytes": 1952054,
-      "downloadUrl": "https://cdn.jsdelivr.net/gh/dotrly/store@main/apps/Utilities/com.relay.ollama/latest.rly",
+      "downloadUrl": "https://github.com/dotrly/store/releases/download/com.relay.ollama-v1.0.1/app.rly",
       "bundleId": "com.relay.ollama",
       "id": "com.relay.ollama",
       "version": "1.0.1",
       "author": "dotrly",
-      "iconUrl": "https://cdn.jsdelivr.net/gh/dotrly/store@main/assets/com.relay.ollama/icon.png"
+      "iconUrl": "https://github.com/dotrly/store/releases/download/com.relay.ollama-v1.0.1/icon.png"
     },
     {
       "name": "Terminal",
       "description": "Terminal provides full terminal access to your local machine with interactive PTY sessions.",
       "category": "Utilities",
       "screenshots": [
-        "1.png"
+        "https://github.com/dotrly/store/releases/download/com.relay.terminal-v1.1.0/1.png"
       ],
       "sizeBytes": 2079052,
-      "downloadUrl": "https://cdn.jsdelivr.net/gh/dotrly/store@main/apps/Utilities/com.relay.terminal/latest.rly",
+      "downloadUrl": "https://github.com/dotrly/store/releases/download/com.relay.terminal-v1.1.0/app.rly",
       "bundleId": "com.relay.terminal",
       "id": "com.relay.terminal",
       "version": "1.1.0",
       "whatsNew": "",
       "author": "jas",
-      "iconUrl": "https://cdn.jsdelivr.net/gh/dotrly/store@main/assets/com.relay.terminal/icon.png",
+      "iconUrl": "https://github.com/dotrly/store/releases/download/com.relay.terminal-v1.1.0/icon.png",
       "permissions": [
         "direct",
         "terminal",
@@ -46,15 +46,15 @@
       "description": "# Rcode: Professional Mobile Code Editor\n\nUnleash your productivity with **Rcode**, a sophisticated, professional-grade code editor meticulously crafted for the mobile era. Experience the seamless fusion of desktop-class power and intuitive design.\n\n## Key Features\n\n- **Advanced Syntax Highlighting**: Support for over 100 languages with intelligent color schemes.\n- **Intelligent Code Completion**: Context-aware suggestions to help you write code faster.\n- **Integrated Terminal**: Run shell commands and interact with the Relay environment directly.\n- **Efficient File Management**: Navigate complex projects with a powerful search and file explorer.\n- **PWA Ready**: Install as a standalone app and work offline anywhere.\n\n## Powerful Editing\nRcode brings the full power of modern development to your fingertips. Whether you're making a quick fix or building a full project, Rcode provides the tools you need.\n\n---\n*The ultimate tool for the modern developer.*\n",
       "category": "Utilities",
       "author": "dotrly",
-      "iconUrl": "https://cdn.jsdelivr.net/gh/dotrly/store@main/assets/com.relay.rcode/icon.png",
+      "iconUrl": "https://github.com/dotrly/store/releases/download/com.relay.rcode-v1.0.0/icon.png",
       "screenshots": [
-        "Simulator Screenshot - iPad Pro 13-inch (M5) (16GB) - 2026-02-01 at 14.01.54.png",
-        "Simulator Screenshot - iPad Pro 13-inch (M5) (16GB) - 2026-02-01 at 14.02.17.png",
-        "Simulator Screenshot - iPad Pro 13-inch (M5) (16GB) - 2026-02-01 at 14.02.36.png",
-        "Simulator Screenshot - iPhone 17 Pro - 2026-02-01 at 13.52.52.png",
-        "Simulator Screenshot - iPhone 17 Pro - 2026-02-01 at 13.53.03.png",
-        "Simulator Screenshot - iPhone 17 Pro - 2026-02-01 at 13.53.16.png",
-        "Simulator Screenshot - iPhone 17 Pro - 2026-02-01 at 13.53.50.png"
+        "https://github.com/dotrly/store/releases/download/com.relay.rcode-v1.0.0/Simulator%20Screenshot%20-%20iPad%20Pro%2013-inch%20(M5)%20(16GB)%20-%202026-02-01%20at%2014.01.54.png",
+        "https://github.com/dotrly/store/releases/download/com.relay.rcode-v1.0.0/Simulator%20Screenshot%20-%20iPad%20Pro%2013-inch%20(M5)%20(16GB)%20-%202026-02-01%20at%2014.02.17.png",
+        "https://github.com/dotrly/store/releases/download/com.relay.rcode-v1.0.0/Simulator%20Screenshot%20-%20iPad%20Pro%2013-inch%20(M5)%20(16GB)%20-%202026-02-01%20at%2014.02.36.png",
+        "https://github.com/dotrly/store/releases/download/com.relay.rcode-v1.0.0/Simulator%20Screenshot%20-%20iPhone%2017%20Pro%20-%202026-02-01%20at%2013.52.52.png",
+        "https://github.com/dotrly/store/releases/download/com.relay.rcode-v1.0.0/Simulator%20Screenshot%20-%20iPhone%2017%20Pro%20-%202026-02-01%20at%2013.53.03.png",
+        "https://github.com/dotrly/store/releases/download/com.relay.rcode-v1.0.0/Simulator%20Screenshot%20-%20iPhone%2017%20Pro%20-%202026-02-01%20at%2013.53.16.png",
+        "https://github.com/dotrly/store/releases/download/com.relay.rcode-v1.0.0/Simulator%20Screenshot%20-%20iPhone%2017%20Pro%20-%202026-02-01%20at%2013.53.50.png"
       ],
       "permissions": [
         "clipboard",
@@ -74,7 +74,7 @@
         "web"
       ],
       "sizeBytes": 7206100,
-      "downloadUrl": "https://cdn.jsdelivr.net/gh/dotrly/store@main/apps/Utilities/com.relay.rcode/latest.rly",
+      "downloadUrl": "https://github.com/dotrly/store/releases/download/com.relay.rcode-v1.0.0/app.rly",
       "bundleId": "com.relay.rcode"
     }
   ]
