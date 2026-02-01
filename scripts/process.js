@@ -31,8 +31,35 @@ function isValidBundleId(id) {
     return true;
 }
 
-function processStore() {
-    console.log('Processing Store Submission...');
+const SUBMISSIONS_DIR = path.join(STORE_DIR, 'submissions');
+
+async function processStore() {
+    console.log('Processing Store Submissions...');
+
+    // 1. Handle ZIP Submissions
+    if (fs.existsSync(SUBMISSIONS_DIR)) {
+        const zips = fs.readdirSync(SUBMISSIONS_DIR).filter(f => f.endsWith('.zip'));
+        for (const zipFile of zips) {
+            console.log(`Extracting ${zipFile}...`);
+            const bundleId = zipFile.replace('-submission.zip', '');
+            const zipPath = path.join(SUBMISSIONS_DIR, zipFile);
+
+            try {
+                // @ts-ignore
+                const AdmZip = (await import('adm-zip')).default;
+                const zip = new AdmZip(zipPath);
+                const extractPath = path.join(PUBLISH_DIR, bundleId);
+
+                if (!fs.existsSync(extractPath)) fs.mkdirSync(extractPath, { recursive: true });
+                zip.extractAllTo(extractPath, true);
+
+                // Cleanup ZIP
+                fs.unlinkSync(zipPath);
+            } catch (e) {
+                console.error(`❌ Failed to extract ${zipFile}:`, e);
+            }
+        }
+    }
 
     if (!fs.existsSync(PUBLISH_DIR)) {
         console.log('No publish directory found.');
@@ -107,8 +134,12 @@ function processStore() {
                 const targetScreenshotsDir = path.join(targetAssetDir, 'screenshots');
                 fs.mkdirSync(targetScreenshotsDir, { recursive: true });
                 const screenshotFiles = fs.readdirSync(path.join(subDir, file));
+
+                // AUTOMATIC DISCOVERY: Ensure manifest reflects actual screenshots
+                manifest.screenshots = [];
                 for (const screenshot of screenshotFiles) {
                     fs.copyFileSync(path.join(subDir, file, screenshot), path.join(targetScreenshotsDir, screenshot));
+                    manifest.screenshots.push(screenshot);
                 }
             }
         }
