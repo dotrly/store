@@ -43,8 +43,8 @@
       "bundleId": "com.relay.volley",
       "category": "Games",
       "description": "# Volley - Focus & Flow\n\nVolley is a minimalist, physics-based volleyball game designed to induce a state of flow. \n\n## Features\n- **Dynamic Physics**: Responsive ball movement that rewards precision.\n- **Haptic Feedback**: Feel every hit (on supported devices).\n- **Adaptive Audio**: Spatial sound effects that react to your gameplay.\n- **Clean Aesthetic**: A distraction-free, premium visual experience.\n- **Progressive Difficulty**: The game naturally speeds up as you improve.\n\n## How to Play\nDrag your paddle horizontally to keep the ball in the air. Hit the ball at different angles to control its direction and speed. Don't let it hit the ground!\n",
-      "downloadUrl": "https://github.com/dotrly/store/releases/download/com.relay.volley/app-1769970421377.rly",
-      "iconUrl": "https://github.com/dotrly/store/releases/download/com.relay.volley/icon-1769970421377.png",
+      "downloadUrl": "https://github.com/dotrly/store/releases/download/com.relay.volley/app-1769973209894.rly",
+      "iconUrl": "https://github.com/dotrly/store/releases/download/com.relay.volley/icon-1769973209894.png",
       "id": "com.relay.volley",
       "name": "Volley",
       "permissions": [
@@ -56,9 +56,9 @@
         "web"
       ],
       "screenshots": [
-        "https://github.com/dotrly/store/releases/download/com.relay.volley/Simulator%20Screenshot%20-%20iPhone%2017%20Pro%20-%202026-02-01%20at%2022.31.39.png",
-        "https://github.com/dotrly/store/releases/download/com.relay.volley/Simulator%20Screenshot%20-%20iPhone%2017%20Pro%20-%202026-02-01%20at%2022.31.53.png",
-        "https://github.com/dotrly/store/releases/download/com.relay.volley/Simulator%20Screenshot%20-%20iPhone%2017%20Pro%20-%202026-02-01%20at%2022.31.59.png"
+        "https://github.com/dotrly/store/releases/download/com.relay.volley/screenshot-0-1769973209894.png",
+        "https://github.com/dotrly/store/releases/download/com.relay.volley/screenshot-1-1769973209894.png",
+        "https://github.com/dotrly/store/releases/download/com.relay.volley/screenshot-2-1769973209894.png"
       ],
       "sizeBytes": 192366,
       "tags": [
