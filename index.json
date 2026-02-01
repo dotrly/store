@@ -43,8 +43,8 @@
       "bundleId": "com.relay.volley",
       "category": "Games",
       "description": "# Volley - Focus & Flow\n\nVolley is a minimalist, physics-based volleyball game designed to induce a state of flow. \n\n## Features\n- **Dynamic Physics**: Responsive ball movement that rewards precision.\n- **Haptic Feedback**: Feel every hit (on supported devices).\n- **Adaptive Audio**: Spatial sound effects that react to your gameplay.\n- **Clean Aesthetic**: A distraction-free, premium visual experience.\n- **Progressive Difficulty**: The game naturally speeds up as you improve.\n\n## How to Play\nDrag your paddle horizontally to keep the ball in the air. Hit the ball at different angles to control its direction and speed. Don't let it hit the ground!\n",
-      "downloadUrl": "https://github.com/dotrly/store/releases/download/com.relay.volley/app-1769975832257.rly",
-      "iconUrl": "https://github.com/dotrly/store/releases/download/com.relay.volley/icon-1769975832257.png",
+      "downloadUrl": "https://github.com/dotrly/store/releases/download/com.relay.volley/app-1769976289784.rly",
+      "iconUrl": "https://github.com/dotrly/store/releases/download/com.relay.volley/icon-1769976289784.png",
       "id": "com.relay.volley",
       "name": "Volley",
       "permissions": [
@@ -56,9 +56,9 @@
         "web"
       ],
       "screenshots": [
-        "https://github.com/dotrly/store/releases/download/com.relay.volley/screenshot-0-1769975832257.png",
-        "https://github.com/dotrly/store/releases/download/com.relay.volley/screenshot-1-1769975832257.png",
-        "https://github.com/dotrly/store/releases/download/com.relay.volley/screenshot-2-1769975832257.png"
+        "https://github.com/dotrly/store/releases/download/com.relay.volley/screenshot-0-1769976289784.png",
+        "https://github.com/dotrly/store/releases/download/com.relay.volley/screenshot-1-1769976289784.png",
+        "https://github.com/dotrly/store/releases/download/com.relay.volley/screenshot-2-1769976289784.png"
       ],
       "sizeBytes": 192366,
       "tags": [
@@ -67,7 +67,7 @@
         "Minimalist",
         "Physics"
       ],
-      "version": "1.0.1",
+      "version": "1.0.2",
       "whatsNew": "# Changelog\n\n## 1.0.0\n- Initial release of Volley.\n- Core gameplay loop with progressive difficulty.\n- Light and Dark modes.\n- High score tracking.\n"
     }
   ]
