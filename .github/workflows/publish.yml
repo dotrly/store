@@ -39,3 +39,6 @@ jobs:
         with:
           commit_message: "chore: Rebuild catalog [skip ci]"
           file_pattern: "index.json"
+
+      - name: Purge jsDelivr Cache
+        run: curl -X GET https://purge.jsdelivr.net/gh/dotrly/store@main/index.json || true
