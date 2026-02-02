@@ -1,0 +1,24 @@
+{
+  "author": "dotrly",
+  "bundleId": "com.relay.ollama",
+  "category": "Utilities",
+  "description": "# Ollama for Relay\n\nRun local Large Language Models (LLMs) directly on your device with Ollama. Chat with AI models privately, safely, and securely without any external API calls.\n\n## Features\n\n- **Privacy First**: No data leaves your device. All inference happens locally via Ollama.\n- **Native Experience**: A smooth, fast, and responsive interface built for the Relay platform.\n- **Local LLMs**: Access models like Llama 3, Mistral, Gemma, and more directly from your computer.\n- **Seamless Integration**: Automatically detects and connects to your local Ollama instance.\n- **Markdown Support**: Rich text rendering for code snippets, lists, and formatted AI responses.\n\n## Getting Started\n\n1.  **Install Ollama**: Ensure you have [Ollama](https://ollama.com/) installed and running on your device.\n2.  **Pull a Model**: Open your terminal and run `ollama pull llama3` (or your preferred model).\n3.  **Launch the App**: Open Ollama in Relay and start chatting!\n\n---\n*Powered by Ollama and the Relay SDK.*\n",
+  "downloadUrl": "https://github.com/dotrly/store/releases/download/com.relay.ollama/app-1770030732690.rly",
+  "iconUrl": "https://github.com/dotrly/store/releases/download/com.relay.ollama/icon-1770030732690.png",
+  "id": "com.relay.ollama",
+  "name": "Ollama",
+  "permissions": [
+    "direct",
+    "system.ai"
+  ],
+  "platforms": [],
+  "screenshots": [
+    "https://github.com/dotrly/store/releases/download/com.relay.ollama/screenshot-0-1770030732690.png",
+    "https://github.com/dotrly/store/releases/download/com.relay.ollama/screenshot-1-1770030732690.png",
+    "https://github.com/dotrly/store/releases/download/com.relay.ollama/screenshot-2-1770030732690.png"
+  ],
+  "sizeBytes": 1954472,
+  "tags": [],
+  "version": "1.0.1",
+  "whatsNew": "# Changelog\n\nAll notable changes to the Ollama Relay app will be documented in this file.\n\n## [1.0.1] - 2026-02-02\n\n### Added\n- Initial release of the Ollama native app.\n- Local LLM chat interface with Markdown support.\n- Automatic connection to local Ollama service.\n- Support for model selection and system prompts.\n- Mobile-responsive design for iPhone and iPad.\n\n---\n*For more information, visit the [Relay Documentation](https://dotrly.com/docs).*\n"
+}
