@@ -29,9 +29,9 @@
       "author": "dotrly",
       "bundleId": "com.relay.rcode",
       "category": "Utilities",
-      "description": "# Rcode: Professional Mobile Code Editor\n\nUnleash your productivity with **Rcode**, a sophisticated, professional-grade code editor meticulously crafted for the mobile era. Experience the seamless fusion of desktop-class power and intuitive design.\n\n## Key Features\n\n- **Advanced Syntax Highlighting**: Support for over 100 languages with intelligent color schemes.\n- **Intelligent Code Completion**: Context-aware suggestions to help you write code faster.\n- **Integrated Terminal**: Run shell commands and interact with the Relay environment directly.\n- **Efficient File Management**: Navigate complex projects with a powerful search and file explorer.\n- **PWA Ready**: Install as a standalone app and work offline anywhere.\n\n## Powerful Editing\nRcode brings the full power of modern development to your fingertips. Whether you're making a quick fix or building a full project, Rcode provides the tools you need.\n\n---\n*The ultimate tool for the modern developer.*\n",
-      "downloadUrl": "https://github.com/dotrly/store/releases/download/com.relay.rcode/app-1770057566578.rly",
-      "iconUrl": "https://github.com/dotrly/store/releases/download/com.relay.rcode/icon-1770057566578.png",
+      "description": "# Rcode: The AI-Native Mobile Editor\n\n**Rcode** redefines mobile development by integrating a powerful **Autonomous AI Agent** directly into your workflow. It's not just an editor; it's your pair programmer on the go.\n\n## Built-in AI Agent\n- **Context-Aware Coding**: The agent understands your entire project structure, reading and writing files across directories.\n- **Autonomous Actions**: From creating components to refactoring huge files, the agent executes complex tasks steps by step.\n- **Interactive Chat**: Discuss ideas, debug errors, and generate code with a persistent, context-rich chat interface.\n- **Tools Support**: Run your favorite CLI AI tools like `codex`, `claude code`, or `qwen code` directly in the integrated terminal.\n- **Git & Tools Integration**: The AI can check git status, view diffs, and inspect your file system to make informed decisions.\n- **Requirements Reporting**: Get formal specific reports on completed tasks to ensure high-quality delivery.\n- **Limited Time Offer**: Includes access to **Kimi2.5** model for FREE (for now).\n\n## Professional Features\n- **Git Integration**: View changes, diffs, and manage your source control visually.\n- **Live Terminal**: Full access to the system shell. Run custom CLIs, standard unix tools, and more.\n- **Smart Editor**: Advanced syntax highlighting, formatting, and intelligent code completion.\n- **Project Explorer**: Robust file management with support for huge projects.\n\n## Designed for Speed\n- **Instant Load**: Built on modern web tech for sub-second startup.\n- **Persistent State**: Your chat, tabs, and terminal sessions stay alive even when you switch contexts.\n- **Premium UI**: A clean, Apple-inspired interface that feels right at home on your device.\n\n*Experience the future of mobile coding with Rcode.*\n",
+      "downloadUrl": "https://github.com/dotrly/store/releases/download/com.relay.rcode/app-1770096281104.rly",
+      "iconUrl": "https://github.com/dotrly/store/releases/download/com.relay.rcode/icon-1770096281104.png",
       "id": "com.relay.rcode",
       "name": "Rcode",
       "permissions": [
@@ -43,7 +43,8 @@
         "geolocation",
         "device.clipboard",
         "filesystem.home",
-        "network.client"
+        "network.client",
+        "system.ai"
       ],
       "platforms": [
         "ios",
@@ -51,22 +52,25 @@
         "web"
       ],
       "screenshots": [
-        "https://github.com/dotrly/store/releases/download/com.relay.rcode/screenshot-0-1770057566578.png",
-        "https://github.com/dotrly/store/releases/download/com.relay.rcode/screenshot-1-1770057566578.png",
-        "https://github.com/dotrly/store/releases/download/com.relay.rcode/screenshot-2-1770057566578.png",
-        "https://github.com/dotrly/store/releases/download/com.relay.rcode/screenshot-3-1770057566578.png",
-        "https://github.com/dotrly/store/releases/download/com.relay.rcode/screenshot-4-1770057566578.png",
-        "https://github.com/dotrly/store/releases/download/com.relay.rcode/screenshot-5-1770057566578.png",
-        "https://github.com/dotrly/store/releases/download/com.relay.rcode/screenshot-6-1770057566578.png"
+        "https://github.com/dotrly/store/releases/download/com.relay.rcode/screenshot-0-1770096281104.png",
+        "https://github.com/dotrly/store/releases/download/com.relay.rcode/screenshot-1-1770096281104.png",
+        "https://github.com/dotrly/store/releases/download/com.relay.rcode/screenshot-2-1770096281104.png",
+        "https://github.com/dotrly/store/releases/download/com.relay.rcode/screenshot-3-1770096281104.png",
+        "https://github.com/dotrly/store/releases/download/com.relay.rcode/screenshot-4-1770096281104.png",
+        "https://github.com/dotrly/store/releases/download/com.relay.rcode/screenshot-5-1770096281104.png",
+        "https://github.com/dotrly/store/releases/download/com.relay.rcode/screenshot-6-1770096281104.png"
       ],
-      "sizeBytes": 7241496,
+      "sizeBytes": 7732248,
       "tags": [
         "Editor",
         "Code",
-        "Development"
+        "Development",
+        "AI",
+        "Git",
+        "Agent"
       ],
       "version": "1.0.6",
-      "whatsNew": "# Changelog\n\n## [1.0.3] - 2026-02-01\n\n### Added\n- Initial release of Rcode for the Relay Store.\n- High-performance syntax highlighting for 100+ languages.\n- Integrated terminal with PTY support.\n- Project-wide search and file management.\n- Seamless \"Git-less\" publishing flow integration.\n\n### Improved\n- Startup time optimized for mobile devices.\n- Theme engine support for System Dark/Light modes.\n"
+      "whatsNew": "# Changelog\n\n## [1.1.0] - 2026-02-03\n\n### MAJOR FEATURES\n- **Autonomous AI Agent**: Built-in coding assistant that can read, write, and refactor code across your project.\n- **Kimi2.5 Integration**: Free access to the powerful Kimi2.5 model for a limited time.\n- **Git Integration**: Visual diffs, staged changes view, and git status reporting.\n- **Requirements Reporting**: The agent now generates formal verification reports for completed tasks.\n\n### IMPROVEMENTS\n- **Smart Terminal**: Support for running external AI CLIs (blooop, claude code, qwen) directly.\n- **Persistent Sessions**: Chat and terminal sessions now persist even when switching tabs or apps.\n- **Dynamic UI**: Editor automatically updates when the AI modifies files.\n\n## [1.0.3] - 2026-02-01\n\n### Added\n- Initial release of Rcode for the Relay Store.\n- High-performance syntax highlighting for 100+ languages.\n- Integrated terminal with PTY support.\n- Project-wide search and file management.\n- Seamless \"Git-less\" publishing flow integration.\n\n### Improved\n- Startup time optimized for mobile devices.\n- Theme engine support for System Dark/Light modes.\n"
     },
     {
       "author": "dotrly",
