@@ -1,9 +1,12 @@
 
 const fs = require('fs');
 const path = require('path');
+const crypto = require('crypto');
 
 const appsDir = path.resolve('apps');
 const indexFile = path.resolve('index.json');
+const sigFile = path.resolve('index.sig');
+const signingKey = process.env.RELAY_STORE_SIGNING_KEY || '';
 
 if (!fs.existsSync(appsDir)) {
     // If apps dir doesn't exist (fresh start), create it
@@ -30,5 +33,18 @@ const catalog = {
     apps: apps
 };
 
-fs.writeFileSync(indexFile, JSON.stringify(catalog, null, 2));
+const indexRaw = JSON.stringify(catalog, null, 2);
+fs.writeFileSync(indexFile, indexRaw);
 console.log(`Wrote ${apps.length} apps to index.json`);
+
+if (signingKey) {
+    try {
+        const signature = crypto.sign(null, Buffer.from(indexRaw), signingKey).toString('base64');
+        fs.writeFileSync(sigFile, signature);
+        console.log('Wrote index.sig (signed)');
+    } catch (e) {
+        console.error(`Failed to sign index.json: ${e.message}`);
+    }
+} else {
+    console.warn('RELAY_STORE_SIGNING_KEY not set. index.json is unsigned.');
+}

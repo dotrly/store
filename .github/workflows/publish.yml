@@ -27,6 +27,8 @@ jobs:
         run: find apps -type f ! -name '*.json' -delete || true
 
       - name: Build Catalog
+        env:
+          RELAY_STORE_SIGNING_KEY: ${{ secrets.RELAY_STORE_SIGNING_KEY }}
         run: node .github/scripts/build-catalog.cjs
 
       - name: Promote Releases
@@ -38,7 +40,9 @@ jobs:
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: "chore: Rebuild catalog [skip ci]"
-          file_pattern: "index.json"
+          file_pattern: "index.json index.sig"
 
       - name: Purge jsDelivr Cache
-        run: curl -X GET https://purge.jsdelivr.net/gh/dotrly/store@main/index.json || true
+        run: |
+          curl -X GET https://purge.jsdelivr.net/gh/dotrly/store@main/index.json || true
+          curl -X GET https://purge.jsdelivr.net/gh/dotrly/store@main/index.sig || true
